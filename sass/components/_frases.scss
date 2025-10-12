@@ -1,0 +1,73 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+div.frases {
+    position: relative;
+}
+
+
+div.frase1 {
+    position: absolute;
+    width: 260px;
+    height: 160px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    background-color: #d4eae5;
+    top: 250px;
+    right: 250px;
+    z-index: 2;
+    border-radius: 8px;
+
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        color: black;
+        font-family: $poppins-font;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin-top: 2px;
+        font-weight: 600;
+        color: $blue;
+        font-family: $poppins-font;
+    }
+
+    img {
+        width: 20px;
+    }
+}
+
+div.frase2 {
+    position: absolute;
+    width: 260px;
+    height: 160px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    background-color: #d4eae5;
+    top: 450px;
+    right: 340px;
+    z-index: 2;
+    border-radius: 8px;
+    backdrop-filter: blur(10px); // para el efecto de desenfoque
+    background-color: rgba(255, 255, 255, 0.2);
+
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        color: black;
+        font-family: $poppins-font;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin-top: 2px;
+        font-weight: 600;
+        color: $blue;
+        font-family: $poppins-font;
+    }
+
+    img {
+        width: 20px;
+    }
+}

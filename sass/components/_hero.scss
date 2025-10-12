@@ -1,0 +1,65 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.hero {
+    margin-top: 50px;
+
+    &__content {
+        text-align: left;
+        max-width: 500px;
+
+        h1 {
+            font-family: $poppins-font;
+            font-weight: 700;
+            font-size: 40px;
+            // line-height: 72px;
+            letter-spacing: 1px;
+            color: $blue;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: $poppins-font;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+            color: $grey;
+            // margin-bottom: 20px;
+            // max-width: 90%;
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 100px;
+
+
+        .btn-primary {
+            margin-right: 20px;
+            @include button();
+
+            &:hover {
+                background-color: $green;
+                color: white;
+            }
+        }
+
+        .play {
+            padding-top: 50px;
+        }
+
+        p {
+            margin-left: -40px;
+            font-family: $roboto-font;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: $blue;
+        }
+
+    }
+
+}

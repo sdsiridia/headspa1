@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+
+@mixin breakpoint($bp) {
+  @if $bp ==tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp ==tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp ==desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp ==desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin reset_list() {
+  padding: 0%;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+@mixin button() {
+  display: inline-block;
+  background-color: $blue;
+  color: white;
+  font-weight: 350;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+}

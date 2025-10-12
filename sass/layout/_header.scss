@@ -1,0 +1,41 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header__login {
+        ul {
+            @include reset-list();
+            gap: 35px;
+
+            .cart {
+                img {
+                    width: 30px;
+                }
+            }
+
+            li {
+                font-size: 26px;
+
+                a {
+
+                    font-size: 16px;
+
+                    &:hover {
+                        color: #ff7eb9;
+                    }
+                }
+            }
+        }
+    }
+}

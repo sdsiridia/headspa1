@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+
+img.women {
+    position: absolute;
+    top: 15px;
+    right: 250px;
+    width: 60%;
+    z-index: 1;
+}
