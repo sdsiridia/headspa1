@@ -3,10 +3,14 @@
 
 .container {
     max-width: 1350px;
-    display: grid;
+    // display: grid;
+    // height: 80vh;
+    // grid-template-columns: 2fr 1fr;
+    // grid-template-rows: 1fr;
     height: 80vh;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     position: relative;
 
 
